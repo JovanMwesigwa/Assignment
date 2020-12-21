@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form  id="my-form" name="data-form">
+        <label for='question1' >What is the capital city of Uganda?</label><br >
+            <input type="text"  name='question1' id="first" /><br >
+        <label for="question2">What is the capital city of Kenya?</label><br >
+            <input type="radio" name='question2' value='Kampala' id="second" /> Nairobi<br >
+            <input type="radio" name='question2' value='Kampala' id="second" /> Kampala<br >
+            <input type="radio" name='question2' value='Kigali' id="second" /> Kigali<br >
+            <input type="radio" name='question2' value='Mombasa'  id="second"/> Mombasa<br >
+        <label for='question3' >What is the capital city of Tanzania?</label><br >
+            <input type="radio" name='question3' value='Nairobi' id="third" /> Nairobi<br >
+            <input type="radio" name='question3' value='Dodoma' id="third" /> Dodoma<br >
+            <input type="radio" name='question3' value="Kigali" id="third" /> Kigali<br >
+            <input type="radio" name="question3" value="Mombasa"  id="third"/> Mombasa<br >
+        <div>
+            <button id="button" type="button" onclick="submitHandler();" value="In have finished" >Submit</button>
+        </div>
+    </form>
+        <div id="response">
+            <p id='messages'></p><br >
+            <p id='number-correct'></p>
+        </div>   
+    
+    <script src="script.js"></script>
+</body>
+</html>
